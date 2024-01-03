@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  /* padding: 10px 20px;
+  border: 1px solid grey; */
+}
+ul > li {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  color: grey;
+}
+li:hover {
+  border: 1px solid red;
+}
+li:active {
+  font-family: "Lucida Sans";
+}
+ul > li:focus {
+  background-color: green;
+}
+li::before {
+  content: ">>";
+}
+@media only screen and (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
