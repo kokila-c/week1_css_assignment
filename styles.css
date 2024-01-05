@@ -8,18 +8,24 @@ ul {
   /* padding: 10px 20px;
   border: 1px solid grey; */
 }
+
 ul > li {
   padding: 10px 20px;
   border: 1px solid grey;
+  flex: 1;
+  list-style-position: inside;
+}
+li:nth-child(odd) {
   color: grey;
 }
+
 li:hover {
   border: 1px solid red;
 }
 li:active {
   font-family: "Lucida Sans";
 }
-ul > li:focus {
+li:focus {
   background-color: green;
 }
 li::before {
